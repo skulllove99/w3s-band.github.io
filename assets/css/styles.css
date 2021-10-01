@@ -1,0 +1,300 @@
+/* Reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Nguyên tắc làm
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+/*
+1 . Vị trí
+2 . Kích thước
+3 . Màu sắc
+4 . Kiểu dáng ( Kiểu chữ , hình tròn , vuông )
+
+ */
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+/* Nav , sub nav */
+#nav ,.subnav {
+    list-style-type: none;
+}
+#nav {
+    display: inline-block;
+}
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+#nav  li:hover .subnav {
+    display: block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover  {
+    color : #000 !important;
+    background-color: #ccc !important;
+}
+#nav li {
+    position: relative;
+    display: inline-block;
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 160;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0 ,0.3);
+}
+#nav .subnav a {
+    color: #000;
+    padding:  0 12px;
+    line-height: 38px;
+}
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+#nav  .subnav  li {
+    width: 100%;
+}
+/*End */
+
+/* search button */
+#header .search-btn {
+    float: right;
+    display: block;
+    padding: 0 21px;
+    cursor: pointer;
+}
+#header .search-btn:hover {
+    background-color: #f44336;
+}
+#header .search-icons {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+/* END */
+/* Start Slider */
+#slider {
+    position: relative;
+    background-color: #333;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/sliders/slider-1.jpg') top center / cover no-repeat;
+}
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX((-50%));
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 25px 0;
+}
+
+#slider .text-description {
+    font-size: 15px;
+}
+/* End slider */
+/* Start Content */
+#content {
+    height: 1000px;
+    background-color: #fff;
+}
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0px;
+}
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+#content .section-subheading {
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-content {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.6;
+}
+#content .section-heading ,
+#content .section-subheading {
+    text-align: center;
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float : left;
+    width: calc(100% / 3) ;
+    text-align: center;
+
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 50%;
+}
+
+#content .tour-section {
+    background-color: #000;
+}
+
+.ticket-list {
+    background-color: #fff;
+    margin-top: 40px;
+}
+.ticket-list li {
+    list-style: none;
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.ticket-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.ticket-list .quantity {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 7px;
+    float: right;
+    border-radius: 50%;
+}
+
+.place-list {
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+
+    /*margin : 30px -8px 0*/
+}
+
+.place-body {
+    background-color: #fff;
+}
+.place-img {
+    width: 100%;
+    display: block;
+}
+.place-img:hover {
+    opacity: 0.6;
+}
+.place-list .place-item {
+    float: left;
+    padding: 0 8px;
+    width: calc(100% / 3);
+}
+.place-item .place-heading {
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    padding-top: 15px;
+}
+
+.place-time {
+    text-align: center;
+    margin-top: 13px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.place-buy-button {
+    display: inline-block;
+    margin: 15px 70px 15px;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+}
+
+.place-buy-button:hover {
+    opacity: 0.7;
+}
+/* End Content */
+#footer {
+
+}
+
+
+.modal {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0 ,0.4);
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+}
+
+.modal-header {
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
